@@ -11,7 +11,8 @@ class CursoController extends Controller
         $curso = Curso::all();
         return view('cursos.index', compact('curso'));
     }
-    function show (Curso $curso){
+    function show ($id){
+        $curso = Curso::find($id);
         return view('cursos.show', compact('curso'));
 
     }
