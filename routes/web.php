@@ -15,3 +15,8 @@ Route::get('/cursos//{id}/edit', [CursoController::class, 'edit'])->name('cursos
 Route::put('/cursos/{id}', [CursoController::class, 'update'])->name('cursos.update');
 Route::delete('cursos/{cursos}',[CursoController::class,'destroy'])->name('cursos.destroy');
 Route::get('cursos/{cursos}',[CursoController::class,'show'])->name('cursos.show');
+
+Route::get('/garciagg', function () {
+    return view('empresas.leyES');
+});
+
